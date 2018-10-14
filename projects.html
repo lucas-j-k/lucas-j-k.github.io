@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Load Google Font  -->
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <!-- End Google Font -->
+
+     <!-- Font Awesome JS: -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>
+    <!-- End FontAwesome -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <!-- End Styles -->
+
+</head>
+<body class="font-main bg-textured-dark min-h-screen">
+    <!-- Mobile Header -->
+    <div class="mobile-header items-center sm:hidden flex justify-center bg-black text-white opacity-75">
+        <div class="logo-wrap w-2/5 text-center">
+            <img src="./assets/img/l-logo.png" alt="Logo Image" class="w-24">
+        </div>
+        <div class="menu-toggle w-2/5 text-white text-center text-4xl " id="menu-open">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    <!-- End mobile header -->
+
+
+    <!-- Main header bar -->
+    <div class="header-bar bg-black font-main sm:flex sm:justify-between" id="header-bar">
+        <div class="header-left sm:flex sm:items-center">
+            <div class="menu-top-bar flex sm:block items-center justify-center">
+                <div class="main-logo-wrap text-center w-2/5 sm:w-auto">
+                    <img src="./assets/img/l-logo.png" class="w-24 sm:w-16" alt="Logo Image">
+                </div>
+                <div class="menu-close text-white text-center text-4xl w-2/5 sm:hidden" id="menu-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <nav class="navbar mt-10 sm:mt-0">
+                <ul class="list-reset sm:flex sm:justify-around px-2 text-2xl sm:text-sm">
+                    <li class="text-center my-2 sm:mx-2"><a href="./index.html" class="text-grey-20 no-underline">Home</a></li>
+                    <li class="text-center my-2 sm:mx-2"><a href="./projects.html" class="text-grey-20 no-underline">Projects</a></li>
+                    <li class="text-center my-2 sm:mx-2"><a href="./contact.html" class="text-grey-20 no-underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right my-10 sm:my-0 sm:flex sm:items-center sm:justify-around sm:px-2">
+            <div class="social-wrap flex text-3xl sm:text-xl items-center justify-center">
+                <a href="#" class="social-link text-off-white p-5 sm:p-0 sm:mx-2"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link text-off-white p-5 sm:p-0 sm:mx-2"><i class="fab fa-codepen"></i></a>
+            </div>
+        </div>   
+    </div>
+    <!-- End of header bar -->
+
+    <div class="container mx-auto min-h-screen">
+        <!-- Main Content -->
+        <section id="main-content" class="main-content leading-tight py-6 px-4">
+            <article class="projects-intro bg-black-alpha-60 text-white py-2 sm:w-5/6 sm:mx-auto">
+                <header>
+                    <h1 class="text-xl text-center">Projects</h1>
+                    <p class="text-off-white mt-3 text-center">Click the below to browse my recent design and development projects.</p>
+                </header>
+            </article>
+        </section>
+        <!-- End Main Content -->
+        <!-- List of project links: -->
+        <section class="project-list px-4 sm:flex sm:justify-around sm:flex-wrap">
+
+            <!-- ===================================================== -->
+            <div class="project shadow-lg border border-yellow mb-8 sm:w-45">
+                <a href="#" class="project-link no-underline text-grey-80">
+                    <header class="relative project-thumbnail h-64 border-b-4 border-yellow bg-cover bg-center" style="background-image: url('https://res.cloudinary.com/duua3lsu1/image/upload/v1530453386/blog/capital-quiz-thumb.jpg');">
+                        <div class="overlay flex items-end justify-center px-2 absolute h-full w-full bg-black-alpha-30">
+                            <h2 class="bg-yellow text-xl text-black p-4">Capital Cities Quiz</h2>
+                        </div>
+                    </header>
+                    <article class="project-summary bg-white text-grey-80 p-4 text-center">
+                        <span class="border-b-2 border-grey-60 mb-4">React | CSS | Javascript</span>
+                        <p class="mt-2">React app, creating a randomised quiz from Rest API data</p>
+                    </article>
+                </a>
+            </div>
+            <!-- ===================================================== -->
+
+            <!-- ===================================================== -->
+            <div class="project shadow-lg border border-yellow mb-8 sm:w-45">
+                <a href="#" class="project-link no-underline text-grey-80">
+                    <header class="relative project-thumbnail h-64 border-b-4 border-yellow bg-cover bg-center" style="background-image: url('https://res.cloudinary.com/duua3lsu1/image/upload/v1538341122/blog/templater-thumbnail-3.png');">
+                        <div class="overlay flex items-end justify-center px-2 absolute h-full w-full bg-black-alpha-30">
+                            <h2 class="bg-yellow text-xl text-black p-4">Email Templater - Laravel</h2>
+                        </div>
+                    </header>
+                    <article class="project-summary bg-white text-grey-80 p-4 text-center">
+                        <span class="border-b-2 border-grey-60 mb-4">PHP | Laravel | Javascript | Bootstrap</span>
+                        <p class="mt-2">Drag and Drop text editor built with Laravel</p>
+                    </article>
+                </a>
+            </div>
+            <!-- ===================================================== -->
+
+            <!-- ===================================================== -->
+            <div class="project shadow-lg border border-yellow mb-8 sm:w-45">
+                <a href="#" class="project-link no-underline text-grey-80">
+                    <header class="relative project-thumbnail h-64 border-b-4 border-yellow bg-cover bg-center" style="background-image: url('https://res.cloudinary.com/duua3lsu1/image/upload/v1531948343/list-quiz-thumb.jpg');">
+                        <div class="overlay flex items-end justify-center px-2 absolute h-full w-full bg-black-alpha-30">
+                            <h2 class="bg-yellow text-xl text-black p-4">List Quiz App</h2>
+                        </div>
+                    </header>
+                    <article class="project-summary bg-white text-grey-80 p-4 text-center">
+                        <span class="border-b-2 border-grey-60 mb-4 leading-normal">React | Javascript | CSS | NodeJS</span>
+                        <p class="mt-2">A REST API server and separate front end client in React</p>
+                    </article>
+                </a>
+            </div>
+            <!-- ===================================================== -->
+
+            <!-- ===================================================== -->
+            <div class="project shadow-lg border border-yellow mb-8 sm:w-45">
+                <a href="#" class="project-link no-underline text-grey-80">
+                    <header class="relative project-thumbnail h-64 border-b-4 border-yellow bg-cover bg-center" style="background-image: url('https://res.cloudinary.com/duua3lsu1/image/upload/v1537109401/blog/rebeccalusherillustration-thumb-lg.jpg');">
+                        <div class="overlay flex items-end justify-center px-2 absolute h-full w-full bg-black-alpha-30">
+                            <h2 class="bg-yellow text-xl text-black p-4">Rebecca Lusher Illustration</h2>
+                        </div>
+                    </header>
+                    <article class="project-summary bg-white text-grey-80 p-4 text-center">
+                        <span class="border-b-2 border-grey-60 mb-4 leading-normal">Sass | CSS | Wordpress | PHP</span>
+                        <p class="mt-2">A custom Wordpress theme built with Sass.</p>
+                    </article>
+                </a>
+            </div>
+            <!-- ===================================================== -->
+
+            <!-- ===================================================== -->
+            <div class="project shadow-lg border border-yellow mb-8 sm:w-45">
+                <a href="#" class="project-link no-underline text-grey-80">
+                    <header class="relative project-thumbnail h-64 border-b-4 border-yellow bg-cover bg-center" style="background-image: url('https://res.cloudinary.com/duua3lsu1/image/upload/v1530219569/theme-sandbox/Thumbnails-for-homepage/tatt-thumb.jpg');">
+                        <div class="overlay flex items-end justify-center px-2 absolute h-full w-full bg-black-alpha-30">
+                            <h2 class="bg-yellow text-xl text-black p-4">Theme Sandbox</h2>
+                        </div>
+                    </header>
+                    <article class="project-summary bg-white text-grey-80 p-4 text-center">
+                        <span class="border-b-2 border-grey-60 mb-4 leading-normal">Javascript | CSS | Bootstrap | Sass</span>
+                        <p class="mt-2">Express app, built to experiment with CSS themes.</p>
+                    </article>
+                </a>
+            </div>
+            <!-- ===================================================== -->
+
+
+        </section>
+        <!-- End of project links -->
+    </div>
+
+    <div class="global-footer bg-black text-white text-center p-6">
+        <p class="copyright w-50 mx-auto leading-loose">
+            &copy; Lucasjk.com 2018 <br>
+            Styled with <a href="https://tailwindcss.com" class="link">Tailwind CSS</a>
+        </p>
+    </div>
+
+    <!-- Load javascript: -->
+    <script src="./assets/js/scripts.js"></script>
+    <!-- End Javascript -->
+
+
+</body>
+</html>

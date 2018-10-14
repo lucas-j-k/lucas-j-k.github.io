@@ -62,6 +62,10 @@ let colors = {
   'grey-40': '#4e5b5f',
   'grey-60': '#303d41',
   'grey-80': '#232d30',
+
+  'black-alpha-60': 'rgba(0,0,0,0.6)',
+  'black-alpha-80': 'rgba(0,0,0,0.8)',
+  'black-alpha-30': 'rgba(0,0,0,0.3)',
 }
 
 module.exports = {
@@ -104,7 +108,7 @@ module.exports = {
   screens: {
     'sm': '576px',
     'md': '768px',
-    'lg': '1200',
+    'lg': '1024px',
   },
 
 
@@ -414,7 +418,9 @@ module.exports = {
     '1/6': '16.66667%',
     '5/6': '83.33333%',
     'full': '100%',
-    'screen': '100vw'
+    'screen': '100vw',
+    '45': '45%',
+    '30': '30%'
   },
 
 

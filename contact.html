@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Load Google Font  -->
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <!-- End Google Font -->
+
+     <!-- Font Awesome JS: -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>
+    <!-- End FontAwesome -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <!-- End Styles -->
+
+</head>
+<body class="font-main bg-textured-dark min-h-screen">
+    <!-- Mobile Header -->
+    <div class="mobile-header items-center sm:hidden flex justify-center bg-black text-white opacity-75">
+        <div class="logo-wrap w-2/5 text-center">
+            <img src="./assets/img/l-logo.png" alt="Logo Image" class="w-24">
+        </div>
+        <div class="menu-toggle w-2/5 text-white text-center text-4xl " id="menu-open">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    <!-- End mobile header -->
+
+
+    <!-- Main header bar -->
+    <div class="header-bar bg-black font-main sm:flex sm:justify-between" id="header-bar">
+        <div class="header-left sm:flex sm:items-center">
+            <div class="menu-top-bar flex sm:block items-center justify-center">
+                <div class="main-logo-wrap text-center w-2/5 sm:w-auto">
+                    <img src="./assets/img/l-logo.png" class="w-24 sm:w-16" alt="Logo Image">
+                </div>
+                <div class="menu-close text-white text-center text-4xl w-2/5 sm:hidden" id="menu-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <nav class="navbar mt-10 sm:mt-0">
+                <ul class="list-reset sm:flex sm:justify-around px-2 text-2xl sm:text-base">
+                    <li class="text-center my-2 sm:mx-2"><a href="./index.html" class="text-grey-20 no-underline">Home</a></li>
+                    <li class="text-center my-2 sm:mx-2"><a href="./projects.html" class="text-grey-20 no-underline">Projects</a></li>
+                    <li class="text-center my-2 sm:mx-2"><a href="./contact.html" class="text-grey-20 no-underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right my-10 sm:my-0 sm:flex sm:items-center sm:justify-around sm:px-2">
+            <div class="social-wrap flex text-3xl sm:text-2xl items-center justify-center">
+                <a href="#" class="social-link text-off-white p-5 sm:p-0 sm:mx-2"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link text-off-white p-5 sm:p-0 sm:mx-2"><i class="fab fa-codepen"></i></a>
+            </div>
+        </div>   
+    </div>
+    <!-- End of header bar -->
+
+    <div class="container mx-auto min-h-screen">
+        <!-- Main Content -->
+        <section id="main-content" class="main-content leading-tight py-6 px-4">
+            <article class="bg-white sm:w-3/5 sm:mx-auto sm:mt-4 sm:shadow-lg">
+                <header class="article-header bg-black text-white p-4">
+                    <h1 class="text-xl text-center">Contact Me</h1>
+                    <p class="text-off-white mt-3 text-center">If you would like to get in touch, please fill in the form below</p>
+                </header>
+                <div class="form-wrapper bg-off-white p-4">
+                    <div class="py-4" id="contact-form">
+                        <form class="contact-form" method="POST">
+                            <label for="name" class="block">Name:</label>
+                            <input type="text" name="name" placeholder="Enter your name" class="w-full p-2 block mb-4" >
+                            <label for="_replyto" class="block">Email</label>
+                            <input type="email" name="_replyto" placeholder="Enter your email address" value="" class="p-2 block w-full mb-4">
+                            <label for="message" class="block">Message:</label>
+                            <textarea name="message" class="p-2 h-24 block w-full mb-4" placeholder="Enter message"></textarea>
+                            <input type="submit" value="Send" class="block button-yellow">
+                            <input type="hidden" name="_subject" value="Website form submission" />
+                            <input type="hidden" name="_next" value="https://lucas-j-k.github.io/contact/" />
+                        </form>
+                    </div>           
+                </div>
+            </article>
+        </section>
+        <!-- End Main Content -->
+    </div>
+
+    <div class="global-footer bg-black text-white text-center p-6">
+        <p class="copyright w-50 mx-auto">
+            &copy; Lucasjk.com 2018 <br>
+            Designed using <a href="https://tailwindcss.com" class="link">Tailwind CSS</a>
+        </p>
+    </div>
+
+    <!-- Load javascript: -->
+    <script src="./assets/js/scripts.js"></script>
+    <!-- End Javascript -->
+
+    <!-- Script for setting up the contact form:  -->
+    <script>
+        var contactform =  document.getElementById('contact-form');
+        contactform.setAttribute('action', 'https://formspree.io/' + 'contact.nocturneworks' + '@' + 'gmail' + '.' + 'com');
+    </script>
+    <!-- End contact form script -->
+
+</body>
+</html>

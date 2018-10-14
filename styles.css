@@ -44,6 +44,10 @@
   @apply bg-yellow text-black font-bold no-underline;
 }
 
+.button-yellow {
+  @apply bg-yellow font-bold p-2 shadow-md rounded text-grey-80;
+}
+
 /* ============================================================================================
 /* End of Custom Components: */
 /* ============================================================================================ */

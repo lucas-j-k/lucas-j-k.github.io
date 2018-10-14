@@ -68,12 +68,12 @@
         <section id="main-content" class="main-content leading-tight p-4">
             <article class="post my-4">
                 <header class="bg-black-alpha-60 p-4">
-                    <h1 class="text-white text-xl text-center">Email Templater - Laravel</h1>
-                    <p class="text-off-white mt-3 text-center">Drag and Drop text editor built with Laravel</p>
+                    <h1 class="text-white text-xl text-center">List Quiz App</h1>
+                    <p class="text-off-white mt-3 text-center">A REST API server in Node, and a separate front end client built in React</p>
                 </header>
                 <div class="bg-white text-black post-content p-4">
                     <div class="technologies-list text-center text-grey-80 my-2">
-                        <span class="technologies mx-auto">PHP | Laravel | Javascript | Bootstrap</span>
+                        <span class="technologies mx-auto">React | Javascript | CSS | Sass | Sequelize | Express</span>
                     </div>
                     <div class="external-links flex items-center justify-center my-2 p-2">
                         <a href="#" class="button-yellow no-underline mx-4">View Project</a>
@@ -81,16 +81,23 @@
                     </div>
                     <div class="written-content sm:w-5/6 lg:w-4/5 mx-auto">
                         <!-- Start of written content -->
-                        <img class="my-4" src="https://res.cloudinary.com/duua3lsu1/image/upload/v1538340806/blog/templater-thumbnail-2.png" alt="Screenshot of Laravel email templater">
-                        <p>A full stack Laravel app, designed to make it easier to store email templates made of reusable text snippets, and provide a drag and drop interface for composing them.</p><br>
-                        <p>Intended to streamline the emailing process for people who find themselves repeatedly sending similar emails.</p><br>
-                        <p>The app implements user authentication, and connects to a database on the backend, and uses Javascript to power the main interface.</p><br>
-                        <p>Styled with Bootstrap 4.</p>
-                        <img src="https://res.cloudinary.com/duua3lsu1/image/upload/v1538341122/blog/templater-thumbnail-3.png" alt="Screeshot of the email templater admin panel" class="my-4">
-                        <img src="https://res.cloudinary.com/duua3lsu1/image/upload/v1538262167/templater/gifs/using-templater-interface.gif" alt="Animated Screen Capture of the Laravel Email templater" class="mt-4">
-                        <p class="text-grey-80">Using the drag and drop interface to build a template</p>
-                        <img src="https://res.cloudinary.com/duua3lsu1/image/upload/v1538262167/templater/gifs/copying-and-clearing.gif" alt="Animated Screen Capture of the Laravel Email templater" class="mt-4">
-                        <p class="text-grey-80">Copying to the clipboard</p>
+                        <img src="https://res.cloudinary.com/duua3lsu1/image/upload/v1531948343/list-quiz-thumb.jpg" alt="Screenshot of the List Quiz App, and the JSON returned by the API server" class="my-4">
+                        <p>A quiz app, to aid with memorising lists of information.</p><br>
+                        <h3 class="font-bold text-xl my-2">Back end (API)</h3>
+                        <p>The lists are stored in a MySQL database, and I built a REST API server in Express to serve the lists to the front end. I used Sequelize as the ORM to connect to the database and manage migrations, data seeds and models.</p><br>
+                        <p>The endpoints for the API are as follows:</p><br>
+                        <p><span class="font-bold">api/list</span><br> Display names and IDs of all lists in database</p><br>
+                        <p><span class="font-bold">api/list/{id}/</span><br> Display name and ID of a single list based on id parameter</p><br>
+                        <p><span class="font-bold">api/list/{id}/entries</span><br> Display plain text entries in a particular list based on list id</p><br>
+                        <p><span class="font-bold">api/list/{list id}/entries?transformation={transformation id}</span><br> Display the plain text list entries and a modified version, based on the transformation ID passed in (e.g remove consonants, remove the middle of the words). This is used to build the question and answer logic on the front end.</p><br>
+                        <img src="https://res.cloudinary.com/duua3lsu1/image/upload/v1532734034/blog/list-quiz-api-screenshot-1.jpg" alt="Screenshot of the API code and the JSON result" class="my-4">
+                        <p>The transformations are algorithms which run as part of the server response, based on the transformation ID passed into the URL.</p><br>
+                        <br><hr><br>
+                        <h3 class="font-bold text-xl my-2">Front End (React App)</h3>
+                        <p>The front end is a standalone React app, built with the standard Create-React-App template.</p><br>
+                        <img src="https://res.cloudinary.com/duua3lsu1/image/upload/v1532734237/blog/list-quiz-front-end-screenshot-1.jpg" alt="Screenshot of the React front end interface" class="my-4">
+                        <p>When the main App component is mounted, it fetches the list data from the API. Once the user chooses a list to run the quiz on, the app sends another request for the requested list ID, and uses this to create the question prompts and answers.</p><br>
+                        <p>All of the quiz logic happens in React.</p><br>
                         <!-- End of written content -->
                     </div>
                 </div>

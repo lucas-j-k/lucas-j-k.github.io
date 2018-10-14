@@ -45,7 +45,7 @@
 }
 
 .button-yellow {
-  @apply bg-yellow font-bold p-2 shadow-md rounded text-grey-80;
+  @apply bg-yellow font-bold p-2 shadow-md rounded text-grey-80 no-underline;
 }
 
 .img-caption {

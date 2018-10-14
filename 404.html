@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Load Google Font  -->
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <!-- End Google Font -->
+
+     <!-- Font Awesome JS: -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>
+    <!-- End FontAwesome -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <!-- End Styles -->
+
+</head>
+<body class="font-main bg-textured-dark min-h-screen">
+    <!-- Mobile Header -->
+    <div class="mobile-header items-center sm:hidden flex justify-center bg-black text-white">
+        <div class="logo-wrap w-2/5 text-center">
+            <img src="./assets/img/l-logo.png" alt="Logo Image" class="w-24">
+        </div>
+        <div class="menu-toggle w-2/5 text-white text-center text-4xl " id="menu-open">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    <!-- End mobile header -->
+
+
+    <!-- Main header bar -->
+    <div class="header-bar bg-black font-main sm:flex sm:justify-between" id="header-bar">
+        <div class="header-left sm:flex sm:items-center">
+            <div class="menu-top-bar flex sm:block items-center justify-center">
+                <div class="main-logo-wrap text-center w-2/5 sm:w-auto">
+                    <img src="./assets/img/l-logo.png" class="w-24 sm:w-16" alt="Logo Image">
+                </div>
+                <div class="menu-close text-white text-center text-4xl w-2/5 sm:hidden" id="menu-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <nav class="navbar mt-10 sm:mt-0">
+                <ul class="list-reset sm:flex sm:justify-around px-2 text-xl sm:text-sm">
+                    <li class="text-center my-2 sm:mx-2"><a href="./index.html" class="text-grey-20 no-underline">Home</a></li>
+                    <li class="text-center my-2 sm:mx-2"><a href="./projects.html" class="text-grey-20 no-underline">Projects</a></li>
+                    <li class="text-center my-2 sm:mx-2"><a href="./contact.html" class="text-grey-20 no-underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right my-10 sm:my-0 sm:flex sm:items-center sm:justify-around sm:px-2">
+            <div class="social-wrap flex text-3xl sm:text-xl items-center justify-center">
+                <a href="#" class="social-link text-off-white p-5 sm:p-0 sm:mx-2"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link text-off-white p-5 sm:p-0 sm:mx-2"><i class="fab fa-codepen"></i></a>
+            </div>
+        </div>   
+    </div>
+    <!-- End of header bar -->
+
+    <div class="container mx-auto min-h-screen">
+        <!-- Main Content -->
+        <section id="main-content" class="main-content leading-tight p-8">
+            <article class="p-4 bg-black-alpha-60 text-center">
+                <h1 class="text-white text-2xl text-center mb-4">404 Error - Page Not Found</h1>
+                <p class="text-grey-20 text-center">Sorry, this page does not seem to exist.</p>
+                <div class="p-4 my-4">
+                    <a href="https://www.lucasjk.com" class="button-yellow">Back to Homepage</a>
+                </div>
+            </article>
+        </section>
+        <!-- End Main Content -->
+    </div>
+
+    <div class="global-footer bg-black text-white text-center p-6">
+        <p class="copyright w-50 mx-auto">
+            &copy; Lucasjk.com 2018 <br>
+            Designed using <a href="https://tailwindcss.com" class="link">Tailwind CSS</a>
+        </p>
+    </div>
+
+    <!-- Load javascript: -->
+    <script src="./assets/js/scripts.js"></script>
+    <!-- End Javascript -->
+
+</body>
+</html>

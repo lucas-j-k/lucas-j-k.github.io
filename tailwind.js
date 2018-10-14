@@ -53,7 +53,15 @@ let colors = {
   'yellow-light': '#face3e',
   'off-white': '#C0BFB1',
   'off-white-dark': '#9b9987',
-  'off-white-light': '#c0bfb1'
+  'off-white-light': '#c0bfb1',
+
+  'black': '#141a1c',
+  'white': '#ffffff',
+
+  'grey-20': '#86969b',
+  'grey-40': '#4e5b5f',
+  'grey-60': '#303d41',
+  'grey-80': '#232d30',
 }
 
 module.exports = {
@@ -120,19 +128,7 @@ module.exports = {
 
   fonts: {
     'main': [
-      'Volkorn',
-      'system-ui',
-      'BlinkMacSystemFont',
-      '-apple-system',
-      'Segoe UI',
-      'Roboto',
-      'Oxygen',
-      'Ubuntu',
-      'Cantarell',
-      'Fira Sans',
-      'Droid Sans',
-      'Helvetica Neue',
-      'sans-serif'
+      'Vollkorn', 'serif'
     ],
     'sans': [
       'system-ui',

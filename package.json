@@ -2,7 +2,7 @@
   "name": "lucasjk.com",
   "version": "1.0.0",
   "description": "Redesigned personal site",
-  "main": "index.html",
+  "main": "index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "rebuild-css": "./node_modules/.bin/tailwind build styles.css -c ./tailwind.js -o ./assets/css/styles.css"
